@@ -1,7 +1,11 @@
 import express from "express";
-import { registerUser } from "./user.controller";
+import { getAllUser, registerUser, getUser, updateUser, deleteUser } from "./user.controller";
 
 const userRoute = express.Router()
-    .post("/", registerUser);
+    .get("/", getAllUser)
+    .post("/register", registerUser)
+    .get("/:userId", getUser)
+    .patch("/:userId", updateUser)
+    .delete("/:userId", deleteUser)
 
 export default userRoute;

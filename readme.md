@@ -11,4 +11,4 @@ name, iamge, variety, price, stock, origin, seasion
 
 <!-- Order -->
 ## Order
-userId, mangoId, Quantity, totalPrice, status
+userId, mangoId, Quantity, totalPrice, status, address
